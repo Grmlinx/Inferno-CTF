@@ -1,0 +1,7 @@
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo what is one thing you know is true but wont agree? myname | md5sum | cut -d ' ' -f 1)
+
+cat /inferno/heresy/heresy > /tmp/$mytarget
+
